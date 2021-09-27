@@ -32,8 +32,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_COLS 3
 
 /* 9Key PCB default pin-out */
-#define MATRIX_ROW_PINS { D1, D0, D4 }
-#define MATRIX_COL_PINS { F4, F5, F6 }
+#define MATRIX_ROW_PINS { F4, F5, F6 }
+#define MATRIX_COL_PINS { D1, D0, D4 }
 #define UNUSED_PINS
 
 /* ws2812 RGB LED */
@@ -43,6 +43,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
+
+#define QMK_ESC_OUTPUT D1  // COL pin if COL2ROW
+#define QMK_ESC_INPUT  F4  // ROW pin if COL2ROW
+// Optional:
+#define QMK_LED B0
+//#define QMK_SPEAKER C6
 
 #define TAPPING_TERM 200
 
