@@ -24,8 +24,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x0007
 #define DEVICE_VER 		0x0001
-#define MANUFACTURER    Bishop Keyboards
-#define PRODUCT         9Key
+#define MANUFACTURER    Philips Keyboards
+#define PRODUCT         Philips Inc.
 
 /* key matrix size */
 #define MATRIX_ROWS 3
