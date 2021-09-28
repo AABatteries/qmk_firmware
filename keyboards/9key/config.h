@@ -44,8 +44,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
 
-#define QMK_ESC_OUTPUT D1  // COL pin if COL2ROW
-#define QMK_ESC_INPUT  F4  // ROW pin if COL2ROW
+// Define BOOTMAGIC enter key - enter bootloader if plugged in while holding down this key - top left
+#define BOOTMAGIC_LITE_ROW 0
+#define BOOTMAGIC_LITE_COLUMN 0
+
+// Define QMK DFU escape keys - to get out of bootloader mode - column 3 & row 3 - bottom right
+#define QMK_ESC_OUTPUT D4  // COL pin if COL2ROW
+#define QMK_ESC_INPUT  F6  // ROW pin if COL2ROW
+
 // Optional:
 #define QMK_LED B0
 //#define QMK_SPEAKER C6
